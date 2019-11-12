@@ -5,11 +5,18 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+autopep8 = "*"
 
 [packages]
 scrapy = "*"
 redis = "*"
-confluent-kafka = "*"
+confluent-kafka = {extras = ["avro"],version = "*"}
+scrapy-splash = "*"
+requests = "*"
+fastavro = "*"
+python-schema-registry-client = "*"
+kafka-python = "*"
+regex = "*"
 
 [requires]
 python_version = "3.7"
